@@ -29,9 +29,7 @@ while life != 0:
     os.system('cls')
 
     for i in range(len(chosen_word)):
-        if guess in result:
-            print("This letter is already chosen\n")
-        elif chosen_word[i] == guess:
+        if chosen_word[i] == guess:
             result[i] = guess
         
     if guess not in chosen_word:
